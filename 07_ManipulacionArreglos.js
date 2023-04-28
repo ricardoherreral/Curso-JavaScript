@@ -62,6 +62,7 @@ var asistencia = estudiantes.map((nombre) => `${nombre}.`)
 console.log(asistencia)
 
 // EJEMPLOS CON MAP
+// Limpiar el arreglo o agregar cosas al objeto
 
 var productos = [
     { nombre: 'camisetas', precio: 15 },
@@ -81,3 +82,20 @@ console.log(productosImpuesto)
 
 var precios = productos.map((producto) => producto.precio)
 console.log(precios)
+
+
+// FILTER
+// Es un metodo inmutable, no modifica el arreglo de origen
+
+var estudiantes = [
+    { nombre: 'Ada', edad: 20, matriculado: true },
+    { nombre: 'Ricardo', edad: 22, matriculado: true },
+    { nombre: 'Jorge', edad: 21, matriculado: false },
+    { nombre: 'Karina', edad: 19, matriculado: true },
+    { nombre: 'Gabriel', edad: 23, matriculado: false },
+    { nombre: 'Raul', edad: 18, matriculado: false },
+]
+
+//var filtrado = estudiantes.filter((estudiante) => estudiante.edad >= 21)
+var filtrado = estudiantes.filter((estudiante) => estudiante.edad >= 21 && estudiante.matriculado)
+console.log(filtrado)
