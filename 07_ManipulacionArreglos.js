@@ -333,7 +333,8 @@ console.log(ordenado)
 // Ayuda a remmover o modificar elementos de un array
 
 var nombres = ['Ricardo', 'Alberto', 'Dayana']
-nombres.splice(1, 1, 'Ada')
+//nombres.splice(1, 1, 'Ada')
+nombres.splice(2, 2)
 console.log(nombres)
 
 // slice
